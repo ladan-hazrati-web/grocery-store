@@ -57,16 +57,16 @@ A grocery shopping website where users can sign up, log in (via email/password o
 ## Screenshots
 
 <p>
-  <img src="https://github.com/user-attachments/assets/b998577c-5a24-48a2-922e-9ee65ca15116" width="100%" />
-  <img src="https://github.com/user-attachments/assets/8a6613c7-bc8a-4761-8895-f425e1e9766a" width="100%" />
-  <img src="https://github.com/user-attachments/assets/f4a9c847-804f-447c-bdd3-43f5b3842055" width="100%" />
-  <img src="https://github.com/user-attachments/assets/7cbed7f0-2c8e-494e-9694-eb980c38948b" width="100%" />
-  <img src="https://github.com/user-attachments/assets/89b7eb40-f05e-4c5c-8328-3bc389e00f1f" width="100%" />
-  <img src="https://github.com/user-attachments/assets/93b1339b-0ca0-4506-98c2-7aeca2d881ff" width="100%" />
-  <img src="https://github.com/user-attachments/assets/d5d7efd7-8905-45f4-845d-e5b02528c12c" width="100%" />
+  <img src="https://github.com/user-attachments/assets/b998577c-5a24-48a2-922e-9ee65ca15116" width="100%" style="margin:0px 10px" />
+  <img src="https://github.com/user-attachments/assets/8a6613c7-bc8a-4761-8895-f425e1e9766a" width="100%" style="margin:0px 10px" />
+  <img src="https://github.com/user-attachments/assets/f4a9c847-804f-447c-bdd3-43f5b3842055" width="100%" style="margin:0px 10px" />
+  <img src="https://github.com/user-attachments/assets/7cbed7f0-2c8e-494e-9694-eb980c38948b" width="100%" style="margin:0px 10px" />
+  <img src="https://github.com/user-attachments/assets/89b7eb40-f05e-4c5c-8328-3bc389e00f1f" width="100%" style="margin:0px 10px" />
+  <img src="https://github.com/user-attachments/assets/93b1339b-0ca0-4506-98c2-7aeca2d881ff" width="100%" style="margin:0px 10px" />
+  <img src="https://github.com/user-attachments/assets/d5d7efd7-8905-45f4-845d-e5b02528c12c" width="100%" style="margin:0px 10px" />
 </p>
 
-> Replace the above URLs with your actual uploaded images.
+
 
 ---
 
@@ -86,6 +86,7 @@ npm run dev
 
 ---
 **Author:** Ladan Hazrati
+
 
 
 
