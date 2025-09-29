@@ -1,0 +1,52 @@
+/* انیمیشن scale برای عکس‌ها */
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.1); /* کمی بزرگ‌تر از اندازه طبیعی */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* بازگشت به اندازه طبیعی */
+  }
+}
+
+.scale-in {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.scale-in.active {
+  animation: pop-in 0.8s ease-out forwards; /* اجرای انیمیشن */
+}
+
+/* انیمیشن fade-in-up برای متن‌ها */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-button-prev {
+    display: block;
+  }
+}
