@@ -62,7 +62,13 @@ A grocery shopping website where users can sign up, log in (via email/password o
 <br />
 <br />
 <br />
+<br />
+<br />
+<br />
 <img src="https://github.com/user-attachments/assets/8a6613c7-bc8a-4761-8895-f425e1e9766a" width="100%">
+<br />
+<br />
+<br />
 <br />
 <br />
 <br />
@@ -70,7 +76,13 @@ A grocery shopping website where users can sign up, log in (via email/password o
 <br />
 <br />
 <br />
+<br />
+<br />
+<br />
 <img src="https://github.com/user-attachments/assets/7cbed7f0-2c8e-494e-9694-eb980c38948b" width="100%">
+<br />
+<br />
+<br />
 <br />
 <br />
 <br />
@@ -78,11 +90,20 @@ A grocery shopping website where users can sign up, log in (via email/password o
 <br />
 <br />
 <br />
+<br />
+<br />
+<br />
 <img src="https://github.com/user-attachments/assets/93b1339b-0ca0-4506-98c2-7aeca2d881ff" width="100%">
 <br />
 <br />
 <br />
+<br />
+<br />
+<br />
 <img src="https://github.com/user-attachments/assets/d5d7efd7-8905-45f4-845d-e5b02528c12c" width="100%">
+<br />
+<br />
+<br />
 <br />
 <br />
 <br />
@@ -106,6 +127,7 @@ npm run dev
 
 ---
 **Author:** Ladan Hazrati
+
 
 
 
