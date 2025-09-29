@@ -48,9 +48,9 @@ A grocery shopping website where users can sign up, log in (via email/password o
 * Products Page
 * Product Details Page
 * Cart Page
-* User Dashboard (account & orders)
-* Orders Page
+* Checkout Page
 * Admin Dashboard (user comments management)
+* .......
 
 ---
 
@@ -127,6 +127,7 @@ npm run dev
 
 ---
 **Author:** Ladan Hazrati
+
 
 
 
