@@ -1,34 +1,34 @@
-import { Routes, Route } from "react-router-dom";
-import React, { useEffect, useCallback, useMemo } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { supabase } from "./supabase/supabaseClient";
+import React, { useCallback, useEffect, useMemo } from "react";
+import { Route, Routes } from "react-router-dom";
 import { setAuthStatus, setError, setUser } from "./slices/authSlice";
 import { setCart, setUserId } from "./slices/cartSlice";
 import { setWishlist, updateProductsWithWishlist } from "./slices/productSlice";
+import { useDispatch, useSelector } from "react-redux";
+
 import { AnimatePresence } from "framer-motion";
-import Header from "./components/header/Header";
+import AuthPage from "./pages/AuthPage";
+import AuthRedirect from "./components/privateRoute/AuthRedirect";
+import CartPage from "./pages/CartPage";
+import CheckoutPage from "./pages/CheckoutPage";
+import CheckoutRedirect from "./components/privateRoute/CheckoutRedirect";
+import DashboardPage from "./pages/DashboardPage";
+import DetailProduct from "./pages/DetailProduct";
+import FilterMenu from "./components/shop/FilterMenu";
 import Footer from "./components/footer/Footer";
-import Message from "./components/message/Message";
+import Header from "./components/header/Header";
+import Home from "./pages/Home";
+import LostPassword from "./pages/LostPassword";
 import MenuAuthLogin from "./components/auth/MenuAuthLogin";
 import MenuCart from "./components/menuCart/MenuCart";
-import SidebarMenu from "./components/header/SidebarMenu";
-import ProtectRoute from "./components/privateRoute/ProtectRoute";
-import AuthCallback from "./components/privateRoute/AuthCallback"
-import AuthRedirect from "./components/privateRoute/AuthRedirect";
-import CheckoutRedirect from "./components/privateRoute/CheckoutRedirect";
-import Home from "./pages/Home";
-import ShopPage from "./pages/ShopPage";
-import CartPage from "./pages/CartPage";
+import Message from "./components/message/Message";
 import NotFoundPage from "./pages/NotFoundPage";
-import DetailProduct from "./pages/DetailProduct";
-import AuthPage from "./pages/AuthPage";
-import LostPassword from "./pages/LostPassword";
-import ResetPassword from "./pages/ResetPassword";
-import CheckoutPage from "./pages/CheckoutPage";
 import OrderPage from "./pages/OrderPage";
-import DashboardPage from "./pages/DashboardPage";
-import FilterMenu from "./components/shop/FilterMenu";
 import ProductModal from "./components/productsSlider/ProductModal";
+import ProtectRoute from "./components/privateRoute/ProtectRoute";
+import ResetPassword from "./pages/ResetPassword";
+import ShopPage from "./pages/ShopPage";
+import SidebarMenu from "./components/header/SidebarMenu";
+import { supabase } from "./supabase/supabaseClient";
 
 // تابع برای خواندن داده از localStorage
 const getLocalStorageData = (key, defaultValue = null) => {
@@ -150,7 +150,6 @@ function App() {
         />
         <Route path="product/:id" element={<DetailProduct />} />
         <Route path="order" element={<OrderPage />} />
-        <Route path="auth/callback" element={<AuthCallback />} />
       </Routes>
       <Footer />
     </>

@@ -1,8 +1,10 @@
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { setAuthStatus, setUser } from "../../slices/authSlice";
+
+import { setUserId } from "../../slices/cartSlice";
 import { supabase } from "../../supabase/supabaseClient";
 import { useDispatch } from "react-redux";
-import { setAuthStatus, setUser, setUserId } from "../../slices/authSlice";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function AuthCallback() {
   const navigate = useNavigate();
