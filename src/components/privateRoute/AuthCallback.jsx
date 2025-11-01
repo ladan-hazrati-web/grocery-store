@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "../../supabase/supabaseClient";
 import { useDispatch } from "react-redux";
-import { setAuthStatus, setUser, setUserId } from "../slices/authSlice";
+import { setAuthStatus, setUser, setUserId } from "../../slices/authSlice";
 
 export default function AuthCallback() {
   const navigate = useNavigate();
