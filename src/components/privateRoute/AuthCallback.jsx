@@ -12,10 +12,15 @@ export default function AuthCallback() {
     const { data: listener } = supabase.auth.onAuthStateChange(
       async (event, session) => {
         if (event === "SIGNED_IN" && session) {
+          localStorage.setItem("user", JSON.stringify(session));
+          localStorage.setItem("data", JSON.stringify(session));
+
           dispatch(setAuthStatus(true));
           dispatch(setUser(session));
           dispatch(setUserId(session.user.id));
-          localStorage.setItem("data", JSON.stringify(session));
+
+          // 🔹 پاک‌سازی هش از URL
+          window.history.replaceState({}, document.title, "/");
           navigate("/", { replace: true });
         }
       }
