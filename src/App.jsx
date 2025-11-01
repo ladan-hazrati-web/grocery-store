@@ -13,6 +13,7 @@ import MenuAuthLogin from "./components/auth/MenuAuthLogin";
 import MenuCart from "./components/menuCart/MenuCart";
 import SidebarMenu from "./components/header/SidebarMenu";
 import ProtectRoute from "./components/privateRoute/ProtectRoute";
+import AuthCallback from "./components/privateRoute/AuthCallback"
 import AuthRedirect from "./components/privateRoute/AuthRedirect";
 import CheckoutRedirect from "./components/privateRoute/CheckoutRedirect";
 import Home from "./pages/Home";
@@ -149,6 +150,7 @@ function App() {
         />
         <Route path="product/:id" element={<DetailProduct />} />
         <Route path="order" element={<OrderPage />} />
+        <Route path="auth/callback" element={<AuthCallback />} />
       </Routes>
       <Footer />
     </>
