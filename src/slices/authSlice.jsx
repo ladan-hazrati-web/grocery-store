@@ -61,7 +61,7 @@ export const loginWithGitHub = createAsyncThunk(
     try {
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: "github",
-        redirectTo: `${window.location.origin}/`,
+        redirectTo: `${window.location.origin}/auth/callback`,
       });
 
       if (error) {
